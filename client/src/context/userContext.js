@@ -69,7 +69,7 @@ const UserProvider = ({ children }) => {
       dispatch({
         type: SETUP_USER_ERROR,
       });
-      showAlert(error.response.data.msg);
+      showAlert({ message: "please provide correct email and password" });
     }
   };
 
